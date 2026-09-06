@@ -159,7 +159,7 @@ jobs:
 
       # UPLOAD ARTIFACTS – only if the repo is owned by Rangi42 (i.e., not a fork)
       - id: upload-polishedcrystal
-        if: ${{ github.repository_owner == 'curiosity-tests' }}
+        if: ${{ github.repository_owner == 'Rangi42' }}
         name: "Upload polishedcrystal artifacts"
         uses: actions/upload-artifact@v7
         with:
@@ -169,7 +169,7 @@ jobs:
             build/polishedcrystal-dev-${{ env.SHORT_SHA }}.*
 
       - id: upload-polishedcrystal-faithful
-        if: ${{ github.repository_owner == 'curiosity-tests' }}
+        if: ${{ github.repository_owner == 'Rangi42' }}
         name: "Upload polishedcrystal-faithful artifacts"
         uses: actions/upload-artifact@v7
         with:
@@ -179,7 +179,7 @@ jobs:
             build/polishedcrystal-faithful-dev-${{ env.SHORT_SHA }}.*
 
       - id: upload-polisheddebug
-        if: ${{ github.repository_owner == 'curiosity-tests' }}
+        if: ${{ github.repository_owner == 'Rangi42' }}
         name: "Upload polisheddebug artifacts"
         uses: actions/upload-artifact@v7
         with:
@@ -189,7 +189,7 @@ jobs:
             build/polishedcrystal-debug-dev-${{ env.SHORT_SHA }}.*
 
       - id: upload-polisheddebug-faithful
-        if: ${{ github.repository_owner == 'curiosity-tests' }}
+        if: ${{ github.repository_owner == 'Rangi42' }}
         name: "Upload polisheddebug-faithful artifacts"
         uses: actions/upload-artifact@v7
         with:
